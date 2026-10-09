@@ -104,10 +104,21 @@ export default function AboutSection() {
               </div>
             ))}
           </div>
-          <button className="inline-flex items-center gap-4 border-2 border-primary rounded-full px-8 py-3.5 bg-transparent hover:bg-primary text-white hover:text-black font-bold uppercase text-xs tracking-widest transition-all shadow-lg">
-            <span>DOWNLOAD CV</span>
-            <Download className="w-4 h-4" />
-          </button>
+          <a
+            href="/Steve_Milner_CV.pdf"
+            download="Steve_Milner_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-5 border-2 border-primary rounded-full pl-8 pr-2 py-2 bg-transparent hover:bg-primary transition-all duration-300 shadow-xl cursor-pointer"
+            aria-label="Download Steve Milner CV"
+          >
+            <span className="font-bold text-white uppercase text-xs tracking-widest group-hover:text-black transition-colors">
+              DOWNLOAD CV
+            </span>
+            <span className="w-10 h-10 bg-primary group-hover:bg-black text-white rounded-full flex items-center justify-center transition-colors">
+              <Download className="w-4 h-4 group-hover:text-primary transition-colors" />
+            </span>
+          </a>
         </div>
 
         {/* Stats Column */}
