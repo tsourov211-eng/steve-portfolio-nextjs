@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin, Globe } from 'lucide-react';
 
 export default function ContactSection() {
   return (
@@ -21,7 +21,7 @@ export default function ContactSection() {
         <div className="lg:col-span-5 space-y-6">
           <h3 className="text-xl font-bold uppercase text-white tracking-wide">DON'T BE SHY !</h3>
           <p className="text-gray-300 text-sm leading-relaxed">
-            Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+            Feel free to get in touch with me. I am always open to discussing new projects, front-end development opportunities, automation solutions, or collaborative ideas.
           </p>
 
           <div className="space-y-4 pt-4">
@@ -31,7 +31,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <span className="text-xs text-gray-400 uppercase block font-semibold">ADDRESS POINT</span>
-                <span className="text-sm font-bold text-white">Tunis, Tunisia</span>
+                <span className="text-sm font-bold text-white">Dhaka, Bangladesh</span>
               </div>
             </div>
 
@@ -41,7 +41,9 @@ export default function ContactSection() {
               </div>
               <div>
                 <span className="text-xs text-gray-400 uppercase block font-semibold">MAIL ME</span>
-                <span className="text-sm font-bold text-white">steve@example.com</span>
+                <a href="mailto:tsourov211@gmail.com" className="text-sm font-bold text-white hover:text-primary transition-colors">
+                  tsourov211@gmail.com
+                </a>
               </div>
             </div>
 
@@ -51,7 +53,43 @@ export default function ContactSection() {
               </div>
               <div>
                 <span className="text-xs text-gray-400 uppercase block font-semibold">CALL ME</span>
-                <span className="text-sm font-bold text-white">+216 21 123 456</span>
+                <a href="tel:+8801953873777" className="text-sm font-bold text-white hover:text-primary transition-colors">
+                  +8801953873777
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-primary/20 text-primary flex items-center justify-center">
+                <Linkedin className="w-5 h-5" />
+              </div>
+              <div>
+                <span className="text-xs text-gray-400 uppercase block font-semibold">LINKEDIN</span>
+                <a
+                  href="https://www.linkedin.com/in/tanvirahammed"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-bold text-white hover:text-primary transition-colors"
+                >
+                  tanvirahammed
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-primary/20 text-primary flex items-center justify-center">
+                <Globe className="w-5 h-5" />
+              </div>
+              <div>
+                <span className="text-xs text-gray-400 uppercase block font-semibold">WEBSITE</span>
+                <a
+                  href="https://webinuxs.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-bold text-white hover:text-primary transition-colors"
+                >
+                  webinuxs.com
+                </a>
               </div>
             </div>
           </div>

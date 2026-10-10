@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Steve Milner - Web Designer & Front-End Developer',
-  description: 'Tunisian based web designer & front-end developer crafting clean & user-friendly experiences.',
+  title: 'Tanvir Ahammed Sourov - Front-End Developer & CS Student',
+  description: 'Portfolio of Tanvir Ahammed Sourov, a Computer Science student and Front-End Developer building responsive, user-friendly web applications and automation solutions.',
 };
 
 export default function RootLayout({

@@ -5,75 +5,75 @@ import { Download, Briefcase, GraduationCap } from 'lucide-react';
 
 export default function AboutSection() {
   const personalInfo = [
-    { label: 'First Name', value: 'Steve' },
-    { label: 'Last Name', value: 'Milner' },
-    { label: 'Age', value: '27 Years' },
-    { label: 'Nationality', value: 'Tunisian' },
+    { label: 'First Name', value: 'Tanvir' },
+    { label: 'Last Name', value: 'Sourov' },
+    { label: 'Nationality', value: 'Bangladeshi' },
     { label: 'Freelance', value: 'Available' },
-    { label: 'Address', value: 'Tunis, Tunisia' },
-    { label: 'Phone', value: '+216 21 123 456' },
-    { label: 'Email', value: 'steve@example.com' },
-    { label: 'Skype', value: 'steve.milner' },
-    { label: 'Languages', value: 'French, English, Arabic' },
+    { label: 'Address', value: 'Dhaka, Bangladesh' },
+    { label: 'Phone', value: '+8801953873777' },
+    { label: 'Email', value: 'tsourov211@gmail.com' },
+    { label: 'LinkedIn', value: 'tanvirahammed' },
+    { label: 'Languages', value: 'English, Bangla' },
+    { label: 'Portfolio', value: 'webinuxs.com' },
   ];
 
   const stats = [
-    { num: '12+', text: 'YEARS OF EXPERIENCE' },
-    { num: '97+', text: 'COMPLETED PROJECTS' },
-    { num: '81+', text: 'HAPPY CUSTOMERS' },
-    { num: '53+', text: 'AWARDS WON' },
+    { num: 'Top 5%', text: 'PROGRAMMING CONTESTS (2024)' },
+    { num: '90%+', text: 'TIME SAVED IN POSTING (API AUTO)' },
+    { num: '10+ hrs', text: 'SAVED WEEKLY FOR CONTENT TEAMS' },
+    { num: '100%', text: 'RESPONSIVE WEB SOLUTIONS' },
   ];
 
   const skills = [
     { name: 'HTML5', level: '95%' },
-    { name: 'JAVASCRIPT', level: '90%' },
-    { name: 'CSS3', level: '92%' },
-    { name: 'REACT.JS', level: '88%' },
-    { name: 'NEXT.JS', level: '85%' },
     { name: 'TAILWIND CSS', level: '95%' },
+    { name: 'JAVASCRIPT', level: '90%' },
+    { name: 'TYPESCRIPT', level: '85%' },
+    { name: 'NEXT.JS', level: '88%' },
     { name: 'NODE.JS', level: '80%' },
-    { name: 'FIGMA', level: '85%' },
+    { name: 'PYTHON', level: '88%' },
+    { name: 'RESPONSIVE & UI/UX', level: '92%' },
   ];
 
   const experience = [
     {
-      year: '2022 - PRESENT',
-      role: 'WEB DEVELOPER',
-      company: 'ENVATO MARKET',
-      desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit.',
+      year: '2024 - PRESENT',
+      role: 'PYTHON AUTOMATION DEVELOPER',
+      company: 'INDEPENDENT / FREELANCE',
+      desc: 'Built multiple Python automation tools to automate repetitive tasks including file handling, data processing, and system operations to improve workflow efficiency.',
     },
     {
-      year: '2018 - 2022',
-      role: 'UI/UX DESIGNER',
-      company: 'THEMEFOREST',
-      desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit.',
+      year: '2023 - 2024',
+      role: 'WORDPRESS REST API & AUTOMATION DEV',
+      company: 'CONTENT PUBLISHING TOOLS',
+      desc: 'Developed a Python automation tool that publishes WordPress posts directly from Excel files using the REST API with bulk uploads and secure authentication, reducing manual time by >90%.',
     },
     {
-      year: '2015 - 2018',
-      role: 'CONSULTANT',
-      company: 'VIDEOHIVE',
-      desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit.',
+      year: '2023 - PRESENT',
+      role: 'FOUNDER & WEB DEVELOPER',
+      company: 'WEBINUXS.COM',
+      desc: 'Created and launched a service-based platform to showcase, build, and deliver custom development and responsive web solutions.',
     },
   ];
 
   const education = [
     {
-      year: '2015',
-      role: 'ENGINEERING DEGREE',
-      company: 'TUNIS UNIVERSITY',
-      desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit.',
+      year: '2022 - 2027 (PRESENT)',
+      role: 'BSC IN COMPUTER SCIENCE & ENG.',
+      company: 'BANGLADESH UNIVERSITY',
+      desc: 'Enrolled in BSc in CSE with strong focus on front-end web development, algorithms, software engineering, and problem solving.',
     },
     {
-      year: '2012',
-      role: 'MASTER DEGREE',
-      company: 'KIEV INSTITUTE',
-      desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit.',
+      year: 'COMPLETED',
+      role: 'HIGHER SECONDARY CERTIFICATE (HSC)',
+      company: 'GPA: 4.50 (OUT OF 5.00)',
+      desc: 'Science discipline with focus in Mathematics, Physics, and ICT.',
     },
     {
-      year: '2009',
-      role: 'BACHELOR DEGREE',
-      company: 'TUNIS HIGH SCHOOL',
-      desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit.',
+      year: 'COMPLETED',
+      role: 'SECONDARY SCHOOL CERTIFICATE (SSC)',
+      company: 'GPA: 4.67 (OUT OF 5.00)',
+      desc: 'Science discipline with strong academic excellence and technical curiosity.',
     },
   ];
 
@@ -105,12 +105,12 @@ export default function AboutSection() {
             ))}
           </div>
           <a
-            href="/Steve_Milner_CV.pdf"
-            download="Steve_Milner_CV.pdf"
+            href="/Tanvir_Ahammed_Sourov_Resume.pdf"
+            download="Tanvir_Ahammed_Sourov_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-5 border-2 border-primary rounded-full pl-8 pr-2 py-2 bg-transparent hover:bg-primary transition-all duration-300 shadow-xl cursor-pointer"
-            aria-label="Download Steve Milner CV"
+            aria-label="Download Tanvir Ahammed Sourov Resume"
           >
             <span className="font-bold text-white uppercase text-xs tracking-widest group-hover:text-black transition-colors">
               DOWNLOAD CV

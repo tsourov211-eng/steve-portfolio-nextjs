@@ -22,10 +22,10 @@ export default function HeroSection({ onMoreAboutMe }: HeroSectionProps) {
             {/* Background Accent Frame Box — fills the left column */}
             <div className="relative w-full h-full max-h-[85vh] bg-[#252525] rounded-[30px] overflow-hidden border-2 border-gray-800/80 shadow-2xl z-10">
               <Image
-                src="/steve.jpg"
-                alt="Steve Milner - Web Designer"
+                src="/tanvr.png"
+                alt="Tanvir Ahammed Sourov - Front-End Developer"
                 fill
-                className="object-cover object-center filter grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+                className="object-cover object-top filter grayscale-[5%] hover:grayscale-0 transition-all duration-500"
                 priority
               />
             </div>
@@ -36,16 +36,16 @@ export default function HeroSection({ onMoreAboutMe }: HeroSectionProps) {
             <div className="flex items-center gap-3 mb-2 animate-entrance-up-1">
               <span className="w-10 h-1 bg-primary rounded-full" />
               <h3 className="text-primary font-extrabold text-2xl lg:text-3xl tracking-widest uppercase">
-                I'M STEVE MILNER.
+                I'M TANVIR AHAMMED SOUROV.
               </h3>
             </div>
 
             <h1 className="text-white font-black text-5xl lg:text-6xl tracking-tight leading-none mb-6 animate-entrance-up-1">
-              WEB DESIGNER
+              FRONT-END DEVELOPER
             </h1>
 
             <p className="text-gray-300 text-base lg:text-lg leading-relaxed max-w-2xl mb-8 font-light animate-entrance-up-2">
-              I'm a Tunisian based web designer & front-end developer focused on crafting clean & user-friendly experiences, I am passionate about building excellent software that improves the lives of those around me.
+              Motivated Computer Science student with strong skills in front-end development and programming. Skilled in building responsive, user-friendly web applications using modern frameworks and languages, passionate about building excellent software that solves real-world challenges.
             </p>
 
             {/* Custom Pill Button with Right-Arrow Yellow Badge */}
@@ -70,26 +70,26 @@ export default function HeroSection({ onMoreAboutMe }: HeroSectionProps) {
           {/* Circular Avatar Image */}
           <div className="relative w-56 h-56 rounded-full overflow-hidden border-4 border-[#252525] shadow-2xl mb-8 animate-entrance-up-1">
             <Image
-              src="/steve.jpg"
-              alt="Steve Milner"
+              src="/tanvr.png"
+              alt="Tanvir Ahammed Sourov"
               fill
-              className="object-cover object-center"
+              className="object-cover object-top"
               priority
             />
           </div>
 
           {/* Headlines */}
           <h2 className="text-primary font-black text-3xl uppercase tracking-wider mb-2 animate-entrance-up-1">
-            I'M STEVE MILNER.
+            I'M TANVIR SOUROV.
           </h2>
 
           <h1 className="text-white font-extrabold text-4xl uppercase tracking-tight mb-6 animate-entrance-up-1">
-            WEB DESIGNER
+            FRONT-END DEVELOPER
           </h1>
 
           {/* Description */}
           <p className="text-gray-300 text-sm leading-relaxed max-w-md mb-8 px-2 font-normal animate-entrance-up-2">
-            I'm a Tunisian based web designer & front-end developer focused on crafting clean & user-friendly experiences, I am passionate about building excellent software that improves the lives of those around me.
+            Motivated Computer Science student with strong skills in front-end development and programming. Skilled in building responsive, user-friendly web applications using modern frameworks and languages.
           </p>
 
           {/* CTA Button */}

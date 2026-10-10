@@ -6,15 +6,51 @@ import { ExternalLink } from 'lucide-react';
 export default function PortfolioSection() {
   const [activeFilter, setActiveFilter] = useState('ALL');
 
-  const filters = ['ALL', 'WEB DESIGN', 'REACT APPS', 'MOBILE APPS'];
+  const filters = ['ALL', 'WEB DEV', 'PYTHON & AUTOMATION', 'COMMUNITY'];
 
   const projects = [
-    { title: 'Ecommerce Storefront', category: 'WEB DESIGN', imgBg: 'from-amber-500 to-yellow-600' },
-    { title: 'SaaS Dashboard UI', category: 'REACT APPS', imgBg: 'from-blue-600 to-indigo-700' },
-    { title: 'Fitness Mobile App', category: 'MOBILE APPS', imgBg: 'from-emerald-500 to-teal-700' },
-    { title: 'Corporate Brand Identity', category: 'WEB DESIGN', imgBg: 'from-purple-600 to-pink-600' },
-    { title: 'Fintech Wallet Platform', category: 'REACT APPS', imgBg: 'from-orange-500 to-red-600' },
-    { title: 'Travel Booking App', category: 'MOBILE APPS', imgBg: 'from-cyan-500 to-blue-600' },
+    {
+      title: 'WordPress Auto Post Script',
+      category: 'PYTHON & AUTOMATION',
+      desc: 'Python automation tool publishing WordPress posts directly from Excel files via REST API, bulk uploads & secure auth.',
+      link: 'https://github.com/tanvirahammed',
+      imgBg: 'from-amber-500 to-yellow-600',
+    },
+    {
+      title: 'Python Automation Suite',
+      category: 'PYTHON & AUTOMATION',
+      desc: 'Automates repetitive tasks including file handling, data processing, and system operations with high efficiency.',
+      link: 'https://github.com/tanvirahammed',
+      imgBg: 'from-blue-600 to-indigo-700',
+    },
+    {
+      title: 'webinuxs.com Platform',
+      category: 'WEB DEV',
+      desc: 'Service-based website launched to showcase and deliver custom web development solutions.',
+      link: 'https://webinuxs.com',
+      imgBg: 'from-emerald-500 to-teal-700',
+    },
+    {
+      title: 'Personal Portfolio SPA',
+      category: 'WEB DEV',
+      desc: 'Modern, high-performance portfolio built with Next.js 14, TypeScript, Tailwind CSS, and dynamic styling.',
+      link: '#',
+      imgBg: 'from-purple-600 to-pink-600',
+    },
+    {
+      title: 'Contest Programming Solutions',
+      category: 'PYTHON & AUTOMATION',
+      desc: 'Top 5% university-level programming contest (2024) algorithmic problem solving and optimization.',
+      link: '#',
+      imgBg: 'from-orange-500 to-red-600',
+    },
+    {
+      title: 'IT Support & Digital Literacy',
+      category: 'COMMUNITY',
+      desc: 'Community tech initiatives helping local users adopt secure technology practices and digital tools.',
+      link: '#',
+      imgBg: 'from-cyan-500 to-blue-600',
+    },
   ];
 
   const filteredProjects =
@@ -51,22 +87,29 @@ export default function PortfolioSection() {
 
       {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredProjects.map((p, idx) => (
-          <div
-            key={idx}
-            className="group relative h-64 rounded-2xl overflow-hidden bg-gradient-to-br p-6 flex flex-col justify-end cursor-pointer shadow-xl border border-gray-800 transform hover:-translate-y-2 transition-all duration-300"
-          >
-            <div className={`absolute inset-0 bg-gradient-to-br ${p.imgBg} opacity-80 group-hover:opacity-100 transition-opacity`} />
-            <div className="relative z-10 text-white">
-              <span className="text-xs font-bold uppercase text-white/80 tracking-widest">{p.category}</span>
-              <h3 className="text-xl font-extrabold uppercase mt-1 mb-2">{p.title}</h3>
-              <div className="inline-flex items-center gap-2 text-xs font-bold text-white uppercase group-hover:underline">
-                <span>View Details</span>
-                <ExternalLink className="w-3.5 h-3.5" />
+        {filteredProjects.map((p, idx) => {
+          const CardTag = p.link && p.link !== '#' ? 'a' : 'div';
+          return (
+            <CardTag
+              key={idx}
+              href={p.link !== '#' ? p.link : undefined}
+              target={p.link && p.link.startsWith('http') ? '_blank' : undefined}
+              rel={p.link && p.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+              className="group relative h-64 rounded-2xl overflow-hidden bg-gradient-to-br p-6 flex flex-col justify-end cursor-pointer shadow-xl border border-gray-800 transform hover:-translate-y-2 transition-all duration-300"
+            >
+              <div className={`absolute inset-0 bg-gradient-to-br ${p.imgBg} opacity-80 group-hover:opacity-100 transition-opacity`} />
+              <div className="relative z-10 text-white">
+                <span className="text-xs font-bold uppercase text-white/80 tracking-widest">{p.category}</span>
+                <h3 className="text-xl font-extrabold uppercase mt-1 mb-1.5">{p.title}</h3>
+                <p className="text-xs text-white/80 line-clamp-2 mb-3">{p.desc}</p>
+                <div className="inline-flex items-center gap-2 text-xs font-bold text-white uppercase group-hover:underline">
+                  <span>View Project</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            </CardTag>
+          );
+        })}
       </div>
     </section>
   );

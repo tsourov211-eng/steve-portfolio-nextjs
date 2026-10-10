@@ -1,4 +1,4 @@
-# Steve Milner - Next.js Portfolio Website
+# Tanvir Ahammed Sourov - Next.js Portfolio Website
 
 A modern, responsive, and pixel-perfect personal portfolio website built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Lucide React Icons**.
 
@@ -82,7 +82,8 @@ steve-portfolio-nextjs/
 │   ├── layout.tsx
 │   └── page.tsx
 ├── public/
-│   └── steve.jpg
+│   ├── tanvr.png
+│   └── Tanvir_Ahammed_Sourov_Resume.pdf
 ├── next.config.js
 ├── postcss.config.js
 ├── tailwind.config.ts

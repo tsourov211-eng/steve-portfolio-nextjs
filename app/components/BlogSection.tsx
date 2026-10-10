@@ -6,22 +6,22 @@ import { Calendar, User } from 'lucide-react';
 export default function BlogSection() {
   const posts = [
     {
-      title: 'How to Own Your Audience by Creating an Email List',
+      title: 'Automating WordPress Publishing with Python & REST API',
       date: 'AUG 12, 2026',
-      author: 'STEVE',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      author: 'TANVIR',
+      desc: 'How I developed a Python tool that connects Excel sheets directly with WordPress REST API, cutting manual publishing time by over 90%.',
     },
     {
-      title: 'Top 10 Tools for Web Designers & Developers in 2026',
+      title: 'Building Modern Responsive Web Apps with Next.js & Tailwind CSS',
       date: 'JUL 28, 2026',
-      author: 'STEVE',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      author: 'TANVIR',
+      desc: 'Key principles for structuring front-end architectures with React, TypeScript, and utility-first styling for fast loading and clean UI/UX.',
     },
     {
-      title: 'Everything You Need to Know About Web Accessibility',
+      title: 'Python Scripting for Workflow Automation & System Efficiency',
       date: 'JUN 15, 2026',
-      author: 'STEVE',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      author: 'TANVIR',
+      desc: 'Practical strategies for eliminating repetitive manual tasks through automated file operations, data manipulation, and script scheduling.',
     },
   ];
 
